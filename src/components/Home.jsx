@@ -10,10 +10,17 @@ const Home = () => {
         <h1 className="font-thin text-sm md:text-lg">
           SURROUND<span className="font-bold">SOUND</span>
         </h1>
+
         <ul className="hidden md:flex gap-85 items-center justify-between">
-          <li>HOMEPAGE</li>
-          <li>CATEGORIES</li>
-          <li>BLOGS</li>
+          <li className="hover:text-pink-300 hover:underline transition duration-300 cursor-pointer">
+            HOMEPAGE
+          </li>
+          <li className="hover:text-pink-300 hover:underline transition duration-300 cursor-pointer">
+            CATEGORIES
+          </li>
+          <li className="hover:text-pink-300 hover:underline transition duration-300 cursor-pointer">
+            BLOGS
+          </li>
         </ul>
 
         <button
@@ -26,9 +33,15 @@ const Home = () => {
 
       {Menu && (
         <ul className="md:hidden flex flex-col gap-1 text-white bg-black/60 rounded-xl backdrop-blur-sm w-30 text-start p-3 absolute right-4">
-          <li>HOMEPAGE</li>
-          <li>CATEGORIES</li>
-          <li>BLOGS</li>
+          <li className="hover:text-pink-300 hover:underline transition duration-300 cursor-pointer">
+            HOMEPAGE
+          </li>
+          <li className="hover:text-pink-300 hover:underline transition duration-300 cursor-pointer">
+            CATEGORIES
+          </li>
+          <li className="hover:text-pink-300 hover:underline transition duration-300 cursor-pointer">
+            BLOGS
+          </li>
         </ul>
       )}
 
