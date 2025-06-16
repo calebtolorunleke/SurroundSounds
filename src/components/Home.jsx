@@ -68,7 +68,7 @@ const Home = () => {
             </li>
           </ul>
 
-          <button className="bg-pink-900 text-white mx-25 py-2 md:py-5 md:mx-20 rounded-2xl">
+          <button className="bg-pink-900 text-white mx-25 py-2 md:py-5 md:mx-20 rounded-2xl hover:text-pink-300 hover:bg-yellow-200">
             BUY NOW
           </button>
         </div>
