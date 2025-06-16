@@ -5,7 +5,7 @@ const Home = () => {
   //   const showMenu = () => console.log("okay");
   const [Menu, showMenu] = useState(false);
   return (
-    <div className="h-screen bg-[linear-gradient(to_right,_lightpink_50%,_#b05060_50%)]">
+    <div className=" bg-[linear-gradient(to_right,_lightpink_50%,_#b05060_50%)] overflow-hidden">
       <header className="flex flex-row justify-between items-center px-5 py-1 md:px-20 md:py-5 text-white">
         <h1 className="font-thin text-sm md:text-lg">
           SURROUND<span className="font-bold">SOUND</span>
@@ -45,7 +45,7 @@ const Home = () => {
         </ul>
       )}
 
-      <div className="grid grid-rows px-10 py-10 md:py-10 gap-15 md:gap-20 md:py-25 md:grid-cols-3 bg-white border-t-4 border-l-4 border-r-2 border-b-2 border-gray-400 mx-3 md:mx-15 rounded-xl text-pink-900 md:border-t-8 md:border-l-8 md:border-r-4 md:border-b-4 ">
+      <div className="grid grid-rows-1 px-10 py-5 md:py-10 gap-15 md:gap-20 md:py-25 md:grid-cols-3 bg-white border-t-4 border-l-4 border-r-2 border-b-2 border-gray-400 mx-3 md:mx-15 rounded-xl text-pink-900 md:border-t-8 md:border-l-8 md:border-r-4 md:border-b-4 mb-30">
         <div className="flex flex-col gap-5 md:gap-10">
           <h1 className="text-center font-bold md:text-3xl md:px-15">
             WIRELESS HEADPHONES
@@ -68,7 +68,8 @@ const Home = () => {
             </li>
           </ul>
 
-          <button className="bg-pink-900 text-white mx-25 py-2 md:py-5 md:mx-20 rounded-2xl hover:text-pink-300 hover:bg-yellow-200">
+          <button className="bg-pink-900 text-white mx-20 py-2 px-5 md:py-5 md:mx-20 rounded-2xl hover:text-pink-300 hover:bg-yellow-200">
+            {/* <button className="bg-pink-900 text-white py-3 px-6 rounded-2xl hover:text-pink-300 hover:bg-yellow-200 w-fit self-center"> */}
             BUY NOW
           </button>
         </div>
@@ -77,7 +78,7 @@ const Home = () => {
           <img
             src={soundIMG}
             alt=""
-            className="object-coover border-5 rounded-full h-50 w-50  md:h-90 md:w-100"
+            className="object-cover border-5 rounded-full h-50 w-50  md:h-90 md:w-100"
           />
         </div>
 
